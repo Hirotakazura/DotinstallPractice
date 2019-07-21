@@ -1,0 +1,436 @@
+document.getElementById('id').addEventListener('click', function() {
+  document.getElementById('id').style. = ;
+  document.getElementById('id').classList.add('クラス名') = ;
+  document.getElementById('id').classList.toggle('クラス名') = ;
+});
+
+const tardet = document.getElementById('id')
+target.addEventListener('click', function() {
+  target.style. = ;
+  target.classList.add('クラス名') = ;
+  target.classList.toggle('クラス名') = ;
+});
+
+const div = document.createElement('');
+
+document.body.appendchild();
+
+Math.floor(Math.random());
+
+if (i === winner) {
+  div.dataset.result = 'win';
+} else {
+  div.dataset.result = 'lose';
+}
+div.addEventListener('click', function() {
+  if (div.dataset.result === 'win') {
+    div.textContent = 'win';
+    div.classList.add('win');
+  } else {
+    div.textContent = 'lose';
+    div.classList.add('lose');
+  }
+}
+
+console.log('');
+
+
+string: hello;
+number: 1 2 3;
+undefined: undefined;
+null: null;
+boolean: true false;
+---------------------
+object: object;
+
+console.log(parseInt('5', 10) + 3); //10 進数の整数値
+
+
+条件式 ? true : false;
+
+
+$$: and;
+||: or;
+!: not;
+
+
+switch () {
+  case '':
+  処理;
+  break;
+  case '':
+  処理;
+  break;
+  default:
+  処理;
+  break;
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(`${i}`);
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i === 4) {
+    continue;
+  }
+  if (i === 4) {
+    break;
+  }
+}
+
+
+while (i > 0) {
+
+}
+
+呼び出し
+関数名 (実引数); //
+
+function 関数名 (引数= '初期値');
+
+クッキーの型
+function 関数名 (仮引数) {
+
+}
+
+function 関数名 (仮引数) {
+  return 返り値;
+}
+
+const 定数名 = function(仮引数, 仮引数...) { //無名関数
+  処理;
+  処理;
+  return 返り値;
+}; //変数に代入するときは;
+
+
+const 定数名 = (仮引数, 仮引数...) => 返り値; //アロー関数
+}; //
+
+
+
+
+const a = [1, 2, 3];
+console.log(a[1]);
+
+a[2] = 100;
+
+console.log(a.length);
+
+const a = { //オブジェクト
+  name: hero, //プロパティ
+  year: 20,　
+};
+
+console.log(a.name);
+console.log(a['name']);
+
+a.email = '...';
+
+delate a.name;
+
+class a { // クラス
+  constructor(name, year) { //メソッド クラス内で定義する関数のこと
+    this.name = name; //this つまりaのインスタンスの name プロパティが初期化処理で渡ってきた name
+    this.year = year;
+  }
+}
+
+const b = new a('z', 32); //インスタンス
+
+static. //個別のインスタンスには関係ないけれども、このクラスには関係ありそうな機能を作るときに便利
+
+//クラス：属性（プロパティ）と操作（メソッド）を定義したもの
+//インスタンス：クラスをnewしたもの
+//オブジェクト：クラスとかインスタンスとかのこと
+
+class A extends a { //クラスの継承
+  constructor(name, year, live) {
+    super(name, year);
+    this.live = live;
+  }
+
+add
+
+a.unshift(100);
+a.push(100);
+
+remove
+
+a.shift(100);
+a.pop(100);
+
+
+const a = [1, 5, 10];
+a.splice(2, 0, 6, 7);
+
+for (let i = 0; i < a.length; i++) {
+
+}
+
+a.forEach(item => {
+
+});
+
+a.forEach(item, index => {
+  console.log(`${index}:${item}`);
+});
+
+const b = [];
+a.forEach(item => {
+  b.push(item * 2);
+});
+
+const b = a.map(item => {
+  return item * 2;
+});
+
+const b = a.map(item => item * 2);
+
+const b = a.filter(item => item % 2 ===0); //真偽値を返す関数を与えて true だったときの要素だけ返してくれる filter というメソッド
+
+
+const o = {
+  a: 1,
+  b: 2,
+};
+
+console.log(Object.keys(o));
+console.log(Object.values(o));
+console.log(Object.entries(o));
+
+
+//スプレット演算子
+const a = [10, 20];
+const b = [1, 2, ...a];
+
+const a = [10, 20];
+const sum = (a, b) => a + b;
+console.log(sum(...a));
+
+//分割代入
+const numbers = [1, 2];
+const a = numbers[0];
+const b = numbers[1];
+const [a, b] = numbers;
+
+const numbers = [1, 2, 3, 4];
+const [a, b, ...rest] = numbers;
+console.log(rest);
+
+
+const str = 'hello';
+console.log(str.length);
+console.log(str.substring(start, end));
+console.log(str[1]);
+
+
+
+//Math
+
+console.log(Math.PI); //3.1415...
+
+Math.random() //0~1;
+
+Math.floor(Math.random() * 6 + 1);
+
+
+//dataset
+const b = new Date();
+
+console.log(d.FullYear()); //japan
+console.log(d.FullMonth());
+console.log(d.FullDate());
+console.log(d.FullHours());
+console.log(d.FullMinutes());
+console.log(d.FullSeconds());
+console.log(d.FullMilliseconds());
+
+
+console.log(d.getTime()); //utc
+
+
+
+const d = new Date(2018, 11);
+d.setHours(10, 20, 30);
+d.setDate(d.getDate() + 3);
+
+const d = new Date(2018, 11, 1);
+const d = new Date(2018, 11, 10);
+
+console.log((d2 - d2) / (24 * 60 * 60 * 1000));
+
+
+
+
+
+//windowobject
+
+window.alret('...');
+
+const answer = confirm('...');
+
+
+setInterval(関数, ミリ秒);
+
+
+
+const showTime = () => {
+  console.log(new.Date());
+  i++;
+  if (i > 2) {
+    clearInterval(timerId);
+  }
+};
+
+let timerId = setInterval(showTime, 1000);
+
+
+//setTimeout 指定した時間のあとに 1 回だけ処理を実行するためのメソッド
+
+
+setTimeout(showTime, 1000);
+
+
+const showTime = () => {
+  console.log(new.Date());
+  setTimeout(showTime, 1000);
+
+  showTime();
+};
+
+const showTime = () => {
+  console.log(new.Date());
+  let timerId = setTimeout(showTime, 1000);
+  i++;
+  if (i > 2) {
+    clearTimeout(timerId);
+  }
+  showTime();
+};
+
+
+//例外
+
+const a = 'hello';
+console.log(a.toupperCase());
+
+
+
+
+
+
+
+//DOM
+
+
+
+document.body.textContent = 'hello';
+document.title = 'changed';
+
+document.getElementById('target') // id
+document.getElementsByClassName('box') // class
+document.getElementsByTagName('li') // tagname
+
+document.querySelector('form button'); //セレクターで最初に見つかったひとつの要素
+document.querySelectorAll('ul.menu > li'); //セレクターで見つかったすべての要素
+
+document.querySelectorAll('li').forEach(li => {
+  li.textContent = 'LI!';
+});
+
+document.querySelectorAll('li:nth-child(odd)').forEach(li => {
+  li.textContent = 'LI!';
+});
+
+
+const ul = document.querySelector('ul');
+
+console.log(ul.parentNode); //親要素
+console.log(ul.children); //子要素
+console.log(ul.children[0]); //子要素
+
+
+for (let i = 0; i < ul.children.length; i++) {
+  console.log(ul.children[i].textContent);
+}
+
+//要素の属性
+
+h1.style.color = 'gray';
+h1.style.backgroundColor = 'gray';
+
+
+//カスタムデータ
+
+<h1 data-app-id="app01"></h1>
+const h1 = document.querySelector('h1');
+console.log(h1.dataset.appId);
+h1.dataset.message = 'this is custom message';
+
+//クラス属性
+
+const div = document.queryselector('div');
+div.className = 'box border-pink';
+
+div.ClassList.add('border-pink');
+div.ClassList.remove('border-pink');
+
+if (div.ClassList.contains('border-pink')) { //ついているか調べる
+  div.ClassList.remove('border-pink');
+} else {
+  div.ClassList.add('border-pink');
+}
+
+div.classList.toggle('border-pink');
+
+
+
+//要素を生成
+
+const h1 = document.createElement('h1');
+h1.textContent = 'Title';
+document.body.appendChild(h1);
+
+const p = document.createElement('p');
+p.textContent = 'PPP!';
+document.body.appendChild(p);
+
+const h2 = document.createElement('h2');
+h2.textContent = 'Sub Title';
+document.body.insertBefore(h2, p); //途中に
+document.どの親に.insertBefore(h2, どの要素の前に); //途中に
+
+const copy = p.cloneNode(true); //複製
+const copy = p.cloneNode(false); //空要素
+document.body.insertBefore(copy, h2);
+
+document.body.removeChild(h2);
+
+//form
+
+text.focus();
+text.select(); //フォーカスしつつ中のテキストを全選択
+text.disabled = true; //入力させないようにするための方法
+
+
+
+//イベントリスナー
+
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+  console.log('hello');
+});
+
+
+//座標
+
+const button = document.querySelector('div');
+button.addEventListener('mousemove', e => {
+  div.textContent = `${e.clientX}:${e.clientY}`;
+});
+
+
+
+//preventDefaul 要素の規定の動作をキャンセルするというメソッド
